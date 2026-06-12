@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!-- saved from url=(0212)file:///Users/frank/Downloads/%E5%9B%BD%E5%86%85%E5%A4%96%E4%B8%BB%E6%B5%81%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%94%B6%E8%B4%B9%E6%A8%A1%E5%BC%8F%E5%AF%B9%E6%AF%94_2026%E5%B9%B46%E6%9C%88%E6%9B%B4%E6%96%B0%E7%89%88.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国内外主流大模型收费模式对比（2026年6月更新版）</title>
+<style>
+  :root{
+    --bg:#faf8f0; --card:#ffffff; --ink:#1a1a1a; --sub:#6b6b6b;
+    --green:#16a34a; --blue:#2563eb; --orange:#ea580c; --purple:#7c3aed;
+    --line:#e8e4d8; --dash:#d8d2c0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--bg);color:var(--ink);padding:48px 40px;max-width:1280px;margin:0 auto;}
+  h1{text-align:center;font-size:40px;font-weight:800;letter-spacing:1px;}
+  .subtitle{text-align:center;color:var(--sub);font-size:14px;margin:12px 0 36px;}
+  .subtitle b{color:var(--orange);}
+  .section-head{display:flex;justify-content:space-between;align-items:baseline;margin:36px 0 16px;}
+  .section-title{font-size:22px;font-weight:800;color:var(--green);}
+  .section-title.intl{color:var(--blue);}
+  .legend{font-size:12px;color:var(--sub);display:flex;gap:16px;align-items:center;}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr) 1fr;gap:16px;}
+  .grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  @media(max-width:1000px){.grid,.grid3,.grid5{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.grid,.grid3,.grid5{grid-template-columns:1fr;}body{padding:24px 16px;}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .logo{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:15px;flex-shrink:0;}
+  .brand-name{font-size:18px;font-weight:800;line-height:1.1;}
+  .brand-sub{font-size:11px;color:var(--sub);margin-top:2px;}
+  .blk-label{font-size:12px;font-weight:700;color:var(--blue);margin:8px 0 6px;}
+  .blk-label.api{color:var(--green);}
+  .blk-label.other{color:var(--purple);}
+  ul{list-style:none;font-size:12.5px;line-height:1.9;color:#333;}
+  ul li::before{content:"•";margin-right:6px;color:var(--sub);}
+  .divider{border-top:1px dashed var(--dash);margin:10px 0;}
+  .model-row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;margin-bottom:2px;}
+  .model-name{font-weight:700;}
+  .ctx{color:var(--sub);font-size:11px;text-align:right;white-space:nowrap;}
+  .price-line{font-size:12.5px;color:#333;margin-bottom:8px;}
+  .price-line b{font-weight:700;}
+  .note{font-size:10.5px;color:#9a9a9a;margin-top:-4px;margin-bottom:8px;}
+  .tag-row{margin-top:auto;padding-top:10px;}
+  .tags{border:1px solid;border-radius:8px;padding:7px 10px;font-size:11.5px;font-weight:600;display:flex;gap:12px;flex-wrap:wrap;}
+  .tags.green{color:var(--green);border-color:#bbe5c8;background:#f2fbf5;}
+  .tags.blue{color:var(--blue);border-color:#c3d4f7;background:#f3f7fe;}
+  .tags.purple{color:var(--purple);border-color:#dccdf6;background:#f8f4fe;}
+  .tags.orange{color:var(--orange);border-color:#f5cdb5;background:#fef6f0;}
+  .feature-card{background:#f0f7ee;border:1px solid #d6e8d0;border-radius:14px;padding:18px;font-size:12.5px;}
+  .feature-card h3{font-size:15px;font-weight:800;color:var(--green);margin-bottom:12px;text-align:center;}
+  .feature-card .f-item{margin-bottom:12px;}
+  .feature-card .f-title{font-weight:700;color:#2d6a36;margin-bottom:2px;}
+  .feature-card .f-desc{color:#555;line-height:1.6;font-size:11.5px;}
+  .intl-feature{background:#fdf6ec;border:1px solid #f0e0c4;}
+  .intl-feature h3{color:var(--orange);}
+  .intl-feature .f-title{color:#b4530f;}
+  .concl-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:left;}
+  .concl-title{font-size:14px;font-weight:800;margin-bottom:6px;}
+  .concl-model{font-size:13px;font-weight:700;margin-bottom:4px;}
+  .concl-desc{font-size:11.5px;color:var(--sub);line-height:1.6;}
+  .c1 .concl-title{color:#d99000;} .c2 .concl-title{color:var(--blue);}
+  .c3 .concl-title{color:#dd3b3b;} .c4 .concl-title{color:var(--purple);}
+  .c5 .concl-title{color:var(--green);}
+  .footer{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;border-top:1px solid var(--line);margin-top:36px;padding-top:20px;font-size:11px;color:var(--sub);line-height:1.7;}
+  @media(max-width:800px){.footer{grid-template-columns:1fr 1fr;}}
+  .footer b{color:#444;}
+  .updated{display:inline-block;background:#fff3e8;color:var(--orange);font-size:10px;font-weight:700;border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px;}
+  .price-usd{font-size:12.5px;display:flex;justify-content:space-between;margin-bottom:3px;}
+  .price-usd b{font-weight:700;}
+</style>
+</head>
+<body>
+
+<h1>国内外主流大模型收费模式对比</h1>
+<p class="subtitle">📅 数据截至 <b>2026 年 6 月 12 日</b>（已逐一核对各官网最新刊例价），如有变动以各官网实时价格为准</p>
+
+<!-- ============ 一、国内主流模型 ============ -->
+<div class="section-head">
+  <div class="section-title">一、国内主流模型（7 家）</div>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--green)"></span>免费 / 永久免费</span>
+    <span><span class="dot" style="background:var(--blue)"></span>会员订阅</span>
+    <span><span class="dot" style="background:var(--orange)"></span>旗舰 / 高阶</span>
+  </div>
+</div>
+
+<div class="grid">
+
+  <!-- DeepSeek -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#4d6bfe;">DS</div>
+      <div><div class="brand-name">DeepSeek</div><div class="brand-sub">深度求索（杭州）</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>¥0 永久免费</li>
+      <li>无会员体系</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">DeepSeek-V4-Flash</span><span class="ctx">上下文 1M</span></div>
+    <div class="price-line">输入 <b>¥1</b>　输出 <b>¥2</b></div>
+    <div class="note">缓存命中输入仅 ¥0.02</div>
+    <div class="model-row"><span class="model-name">DeepSeek-V4-Pro</span><span class="ctx">上下文 1M</span></div>
+    <div class="price-line">输入 <b>¥3</b>　输出 <b>¥6</b></div>
+    <div class="note">缓存命中 ¥0.025；原 2.5 折促销已转为正式定价</div>
+    <div class="tag-row"><div class="tags green">🌱 开源　全系 1M 上下文　性价比最强</div></div>
+  </div>
+
+  <!-- Kimi -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#111;">K*</div>
+      <div><div class="brand-name">Kimi</div><div class="brand-sub">月之暗面（北京）</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>免费版：每日限次</li>
+      <li>Andante ¥49 / 月</li>
+      <li>Moderato ¥99 / 月</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">Kimi K2.6</span><span class="ctx">上下文 256K</span></div>
+    <div class="price-line">输入 <b>¥6.5</b>　输出 <b>¥27</b></div>
+    <div class="note">缓存命中输入 ¥1.1</div>
+    <div class="model-row"><span class="model-name">Kimi K2.5</span><span class="ctx">上下文 256K</span></div>
+    <div class="price-line">输入 <b>¥4</b>　输出 <b>¥21</b></div>
+    <div class="note">缓存命中输入 ¥0.7</div>
+    <div class="tag-row"><div class="tags blue">📄 多模态输入　长程代码能力强</div></div>
+  </div>
+
+  <!-- 豆包 -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#8b5cf6;">豆</div>
+      <div><div class="brand-name">豆包</div><div class="brand-sub">字节跳动</div></div>
+    </div>
+    <div class="blk-label">C 端订阅（测试中）</div>
+    <ul>
+      <li>标准版 ¥68 / 月</li>
+      <li>加强版 ¥200 / 月</li>
+      <li>专业版 ¥500 / 月</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens，≤32K 输入档）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">Seed 2.0 Pro</span><span class="ctx">上下文 256K</span></div>
+    <div class="price-line">输入 <b>¥3.2</b>　输出 <b>¥16</b>（缓存命中 ¥0.64）</div>
+    <div class="model-row"><span class="model-name">Seed 2.0 Lite</span><span class="ctx">上下文 256K</span></div>
+    <div class="price-line">输入 <b>¥0.6</b>　输出 <b>¥3.6</b></div>
+    <div class="model-row"><span class="model-name">Seed 2.0 Mini</span><span class="ctx">上下文 256K</span></div>
+    <div class="price-line">输入 <b>¥0.2</b>　输出 <b>¥2</b></div>
+    <div class="note">按输入长度分档计费，长输入档单价更高；豆包 1.6（¥0.8 / ¥8）仍在售</div>
+    <div class="tag-row"><div class="tags purple">🎬 多模态领先　Seedance 2.0 视频生成</div></div>
+  </div>
+
+  <!-- 通义千问 -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#6457f0;">通</div>
+      <div><div class="brand-name">通义千问</div><div class="brand-sub">阿里巴巴</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>会员制（价格以官网为准）</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">Qwen3.7-Max ⭐新旗舰</span><span class="ctx">上下文 1M</span></div>
+    <div class="price-line">输入 <b>¥12</b>　输出 <b>¥36</b></div>
+    <div class="note">后付费限时 5 折：输入 ¥6 / 输出 ¥18</div>
+    <div class="model-row"><span class="model-name">Qwen3.6-Plus</span><span class="ctx">上下文 1M</span></div>
+    <div class="price-line">输入 <b>¥2</b>　输出 <b>¥12</b>（缓存命中 ¥0.2）</div>
+    <div class="model-row"><span class="model-name">Qwen3.6-Flash</span><span class="ctx">上下文 1M</span></div>
+    <div class="price-line">输入 <b>¥1.2</b>　输出 <b>¥7.2</b></div>
+    <div class="tag-row"><div class="tags blue">🕐 百万上下文　国产知识能力第一梯队</div></div>
+  </div>
+
+  <!-- 文心一言 -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#2932e1;">文</div>
+      <div><div class="brand-name">文心一言</div><div class="brand-sub">百度</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>专业版 ¥49.9 / 月起</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">ERNIE 5.0 ⭐旗舰</span><span class="ctx">上下文 119K</span></div>
+    <div class="price-line">输入 <b>¥6–10</b>　输出 <b>¥24–40</b>（按档）</div>
+    <div class="model-row"><span class="model-name">ERNIE X1.1 Preview</span><span class="ctx">上下文 64K</span></div>
+    <div class="price-line">输入 <b>¥1</b>　输出 <b>¥4</b></div>
+    <div class="model-row"><span class="model-name">ERNIE 4.5 Turbo</span><span class="ctx">上下文 128K</span></div>
+    <div class="price-line">输入 <b>¥0.8</b>　输出 <b>¥3.2</b></div>
+    <div class="tag-row"><div class="tags blue">🏛️ 中文理解强　政务金融场景</div></div>
+  </div>
+
+  <!-- 智谱 -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#3b6ef5;">智</div>
+      <div><div class="brand-name">智谱清言</div><div class="brand-sub">智谱 AI（北京）</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>GLM-4-Flash 永久免费</li>
+      <li>会员 ¥39 / 月起</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">GLM-5.1 ⭐新旗舰</span><span class="ctx">上下文 200K</span></div>
+    <div class="price-line">输入 <b>¥6</b>　输出 <b>¥24</b></div>
+    <div class="note">通用节省计划 5 折：输入 ¥3 / 输出 ¥12</div>
+    <div class="model-row"><span class="model-name">GLM-4-Flash（完全免费）</span><span class="ctx">上下文 128K</span></div>
+    <div class="price-line">输入 <b>免费</b>　输出 <b>免费</b></div>
+    <div class="note">GLM-5 / GLM-5-Turbo 价格以 bigmodel.cn/pricing 为准</div>
+    <div class="tag-row"><div class="tags blue">🆓 免费 API　开发者友好</div></div>
+  </div>
+
+  <!-- 腾讯混元 -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#00a06d;">腾</div>
+      <div><div class="brand-name">腾讯元宝</div><div class="brand-sub">腾讯</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>C 端永久免费</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label api">API 价格（¥ / 1M tokens）<span class="updated">已更新</span></div>
+    <div class="model-row"><span class="model-name">HY 2.0 Think ⭐新旗舰</span><span class="ctx">≤32K 档</span></div>
+    <div class="price-line">输入 <b>¥3.975</b>　输出 <b>¥15.9</b></div>
+    <div class="model-row"><span class="model-name">HY 2.0 Instruct</span><span class="ctx">≤32K 档</span></div>
+    <div class="price-line">输入 <b>¥3.18</b>　输出 <b>¥7.95</b></div>
+    <div class="model-row"><span class="model-name">Hunyuan-TurboS</span><span class="ctx">—</span></div>
+    <div class="price-line">输入 <b>¥0.8</b>　输出 <b>¥2</b></div>
+    <div class="note">Hunyuan-T1：¥1 / ¥4；Hunyuan-lite 免费；服务正迁移至 TokenHub</div>
+    <div class="tag-row"><div class="tags green">🐧 腾讯生态　Lite 永久免费</div></div>
+  </div>
+
+  <!-- 国内模型共同特点 -->
+  <div class="feature-card">
+    <h3>国内模型共同特点</h3>
+    <div class="f-item">
+      <div class="f-title">💰 价格优势明显</div>
+      <div class="f-desc">同等能力的国产 API 通常比海外便宜 10–100 倍</div>
+    </div>
+    <div class="f-item">
+      <div class="f-title">🎁 免费额度丰富</div>
+      <div class="f-desc">多数平台提供免费额度，降低使用门槛</div>
+    </div>
+    <div class="f-item">
+      <div class="f-title">📏 1M 上下文成标配 <span class="updated">已更新</span></div>
+      <div class="f-desc">DeepSeek V4 全系、Qwen3.7-Max 与通义 Plus / Flash 系列均达 1M，Kimi 为 256K</div>
+    </div>
+    <div class="f-item">
+      <div class="f-title">🛡️ 本土化能力强</div>
+      <div class="f-desc">中文理解、合规性、政务金融等场景优势明显</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 二、国外主流模型 ============ -->
+<div class="section-head">
+  <div class="section-title intl">二、国外主流模型（4 家核心）</div>
+  <div class="legend">价格单位：美元 / 每百万 tokens（USD / 1M tokens）</div>
+</div>
+
+<div class="grid">
+
+  <!-- Claude -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#d97757;">✳</div>
+      <div><div class="brand-name">Claude</div><div class="brand-sub">Anthropic（美国）</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>Pro $20 / 月</li>
+      <li>Team $30 / 人 / 月</li>
+      <li>Max $100–200 / 月</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label" style="color:var(--orange)">API 价格（USD / 1M tokens）</div>
+    <div class="price-usd"><span>Haiku 4.5</span><b>$1 ~ $5</b></div>
+    <div class="price-usd"><span>Sonnet 4.6</span><b>$3 ~ $15</b></div>
+    <div class="price-usd"><span>Opus 4.6 / 4.7</span><b>$5 ~ $25</b></div>
+    <div class="tag-row"><div class="tags orange">➕ 推理最强　Agent 编程首选</div></div>
+  </div>
+
+  <!-- ChatGPT -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#10a37f;">⌬</div>
+      <div><div class="brand-name">ChatGPT</div><div class="brand-sub">OpenAI（美国）</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>Go $8 / 月</li>
+      <li>Plus $20 / 月</li>
+      <li>Pro $200 / 月</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label" style="color:var(--orange)">API 价格（USD / 1M tokens）</div>
+    <div class="price-usd"><span>GPT-4.1 mini</span><b>$0.4 ~ $1.6</b></div>
+    <div class="price-usd"><span>GPT-5.5（最新）</span><b>$5 ~ $30</b></div>
+    <div class="price-usd"><span>o3（高强度推理）</span><b>$10 ~ $40</b></div>
+    <div class="tag-row"><div class="tags orange">🧩 模型最全　推理能力最强</div></div>
+  </div>
+
+  <!-- Gemini -->
+  <div class="card">
+    <div class="brand">
+      <div class="logo" style="background:#4285f4;">✦</div>
+      <div><div class="brand-name">Gemini</div><div class="brand-sub">Google（美国）</div></div>
+    </div>
+    <div class="blk-label">C 端订阅</div>
+    <ul>
+      <li>Advanced $19.99 / 月</li>
+      <li>One AI Premium $19.99 / 月</li>
+      <li>含 2TB Google Drive</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="blk-label" style="color:var(--orange)">API 价格（USD / 1M tokens）</div>
+    <div class="price-usd"><span>Gemini 2.5 Flash-Lite</span><b>$0.1 ~ $0.4</b></div>
+    <div class="price-usd"><span>Gemini 2.5 Flash</span><b>$0.3 ~ $2.5</b></div>
+    <div class="price-usd"><span>Gemini 2.5 Pro</span><b>$1.25 ~ $10</b></div>
+    <div class="tag-row"><div class="tags orange">🔄 多模态领先　Google 生态</div></div>
+  </div>
+
+  <!-- Grok + 国外特点 -->
+  <div style="display:flex;flex-direction:column;gap:16px;">
+    <div class="card" style="flex:1;">
+      <div class="brand">
+        <div class="logo" style="background:#000;">𝕏</div>
+        <div><div class="brand-name">Grok</div><div class="brand-sub">xAI（美国）</div></div>
+      </div>
+      <div class="blk-label">C 端订阅</div>
+      <ul>
+        <li>X Premium $8 / 月起</li>
+        <li>X Premium+ $40 / 月</li>
+      </ul>
+      <div class="divider"></div>
+      <div class="blk-label" style="color:var(--orange)">API 价格（USD / 1M tokens）</div>
+      <div class="price-usd"><span>Grok 3 mini</span><b>$0.3 ~ $0.5</b></div>
+      <div class="price-usd"><span>Grok 3</span><b>$3 ~ $15</b></div>
+      <div class="price-usd"><span>Grok 4（旗舰）</span><b>$5 ~ $25</b></div>
+      <div class="tag-row"><div class="tags orange">📡 实时数据　X 平台深度整合</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:16px;" class="grid">
+  <div class="feature-card intl-feature" style="grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+    <div class="f-item"><div class="f-title">💎 模型能力领先</div><div class="f-desc">推理、多模态、代码等综合能力全球领先</div></div>
+    <div class="f-item"><div class="f-title">⚡ 价格相对较高</div><div class="f-desc">GPT-5.5 较前代价格翻倍</div></div>
+    <div class="f-item"><div class="f-title">🧲 生态整合强</div><div class="f-desc">与各自生态深度整合，体验更好</div></div>
+    <div class="f-item"><div class="f-title">💬 按需选择</div><div class="f-desc">根据预算和需求选择最适合的模型</div></div>
+  </div>
+</div>
+
+<!-- ============ 三、核心结论 ============ -->
+<div class="section-head">
+  <div class="section-title">三、核心结论（5 大关键）<span class="updated">已更新</span></div>
+</div>
+
+<div class="grid5">
+  <div class="concl-card c1">
+    <div class="concl-title">🏆 最低成本 API</div>
+    <div class="concl-model">DeepSeek V4-Flash</div>
+    <div class="concl-desc">输入 ¥1 / 输出 ¥2，缓存命中 ¥0.02，且自带 1M 上下文，性价比全球第一</div>
+  </div>
+  <div class="concl-card c2">
+    <div class="concl-title">📖 最长上下文</div>
+    <div class="concl-model">1M 已成国产标配</div>
+    <div class="concl-desc">DeepSeek V4 全系 / Qwen3.7-Max / 通义 Plus 系列均达百万 token，文档处理门槛大幅下降</div>
+  </div>
+  <div class="concl-card c3">
+    <div class="concl-title">🧠 最强推理</div>
+    <div class="concl-model">V4-Pro / GLM-5.1 / Qwen3.7-Max</div>
+    <div class="concl-desc">国产旗舰已对标 o3 / Claude Opus，复杂推理能力差距显著缩小</div>
+  </div>
+  <div class="concl-card c4">
+    <div class="concl-title">🎥 多模态</div>
+    <div class="concl-model">Gemini / 豆包 Seed 2.0</div>
+    <div class="concl-desc">原生多模态领先，视频理解和生成强（Seedance 2.0 已开放企业公测）</div>
+  </div>
+  <div class="concl-card c5">
+    <div class="concl-title">🏢 企业合规</div>
+    <div class="concl-model">通义千问 / 文心一言</div>
+    <div class="concl-desc">中文能力强，合规性和安全性高</div>
+  </div>
+</div>
+
+<!-- ============ 底部说明 ============ -->
+<div class="footer">
+  <div><b>🎯 单位说明：</b>1M tokens ≈ 75 万字中文或 100 万字英文；汇率参考 1 USD ≈ 7.2 CNY</div>
+  <div><b>📊 计费提示：</b>豆包、混元 HY 2.0、千问部分模型按输入长度阶梯计费，表中为最常用 ≤32K 档；缓存命中价适用于重复上下文</div>
+  <div><b>✨ 优惠政策：</b>多数平台提供缓存折扣（最低至 1/50）和批量处理折扣（约 5 折），新用户免费试用额度普遍千万 token 级</div>
+  <div><b>🏗️ 开源部署：</b>DeepSeek / Qwen / GLM / ERNIE 5.1 等开源模型支持本地部署，保护数据安全</div>
+</div>
+
+
+
+</body></html>
